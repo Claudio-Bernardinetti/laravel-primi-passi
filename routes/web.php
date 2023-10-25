@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Controller;
 
-Route::get('home', [Controller::class, 'show']);
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -21,19 +21,3 @@ Route::get('/', function () {
     $age = 38;
     return view('home', compact('name', 'age'));
 });
-
-// Route::get('/', function () {
-//     return view('home');
-// })->name('home');
-
-Route::get('/about', function () {
-    $data = [
-        'title' => 'About as',
-        'message' => 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
-    ];
-    return view('about', compact('data'));
-});
-    
-// Route::get('/contact', function () {
-//     return view('contact');
-// })->name('contact');
