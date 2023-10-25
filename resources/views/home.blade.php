@@ -23,13 +23,16 @@
     <title>Hello World</title>
 </head>
 <body class="antialiased">
-     <nav>
+{{--
+    <nav>
         <ul>
             <li><a href="{{ route('home') }}">Home</a></li>
             <li><a href="{{ route('about') }}">About</a></li>
             <li><a href="{{ route('contact') }}">Contact</a></li>
         </ul>
-    </nav> 
+    </nav>
+--}}
+    <h1>Hello World</h1>
     <h1>{{$name}}</h1>
     <p>You are {{ $age }} years old.</p>
 </body>
